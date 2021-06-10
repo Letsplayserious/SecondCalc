@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор расчета площади</title>
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Top part -->
+
+        <div class="choose__object">
+            <h1>Калькулятор расчета площади</h1>
+            <div class="text">Выберите <br>объект</div>
+            <div class="choose__address">
+                <select name="" id="address" class="address">
+                    <option value="Izmailovskii">Измайловский</option>
+                    <option value="Parkovaia">Парковая 13</option>
+                    <option value="Lublino">Люблино</option>
+                </select>
+            </div>
+            <div class="choose__housing">
+                <select id="housing">
+                    <option value="k1">К1</option>
+                    <option value="k2">К2</option>
+                    <option value="k3.1">К3.1</option>
+                    <option value="k3.2">К3.2</option>
+                    <option value="k3.3">К3.3</option>
+                    <option value="k4">К4</option>
+                </select>
+            </div>
+        </div>
+            <!-- Finishing type -->
+
+        <div class="finishing__type">
+            <h2>Тип отделки</h2>
+            <div class="choose__finishing">
+                <select class="finishing__type__select block">
+                    <option value="plastering">Оштукатуривание</option>
+                    <option value="facing">Облицовка</option>
+                    <option value="warming">Утепление</option>
+                </select>
+            </div>
+            <div class="perimeter ">Периметр</div>
+            <div class="input__meters">
+                <input type="number" value="100.0" step="0.1">
+            </div>
+            <div class="number__of__floors">
+                <div class="floors ">Этажи</div>
+                <div class="input__floors">
+                    <input class="block" type="number" value="1" min="0" max="100" step="1">
+                </div>
+            </div>
+        </div>
+
+            <!-- Subtracted square -->
+
+        <div class="subtracted__area">
+            <h2>Вычитаемая площадь</h2>
+            <div class="subtracted__opening">
+                <select id="subtracted__select" class="subtracted__select">
+                    <option value="OP-201">OП-201(1,78x1,86)</option>
+                    <option value="OP-214">OП-214(1,78x1,26)</option>
+                    <option value="DSV-2">ДСВ-2(2,25x1,1)</option>
+                    <option value="DSV-3">ДСВ-3(2,15x1,15)</option>
+                    <option value="DSV-4">ДСВ-4(2,15х0,8)</option>
+                    <option value="DSV-4">ДСВ-6(2,25х1)</option>
+                    <option value="BP-201">БП-201(2,45х1,7)</option>
+                    <option value="BP-202">БП-202(2,45х1,4)</option>
+                    <option value="D-2">Д-2(2,25х0,85)</option>
+                    <option value="D-3">Д-3(2,25х0,95)</option>
+                    <option value="D-4">Д-4(2,25х0,95)</option>
+                </select>
+            </div>
+            <div class="subtracted__input">
+                <input type="number" class="block" value="1" min="0" max="100" step="1">
+            </div>
+            <div class="subtracted__opening">
+                <select id="subtracted__select" class="subtracted__select">
+                    <option value="OP-201">OП-201(1,78x1,86)</option>
+                    <option value="OP-214">OП-214(1,78x1,26)</option>
+                    <option value="DSV-2">ДСВ-2(2,25x1,1)</option>
+                    <option value="DSV-3">ДСВ-3(2,15x1,15)</option>
+                    <option value="DSV-4">ДСВ-4(2,15х0,8)</option>
+                    <option value="DSV-4">ДСВ-6(2,25х1)</option>
+                    <option value="BP-201">БП-201(2,45х1,7)</option>
+                    <option value="BP-202">БП-202(2,45х1,4)</option>
+                    <option value="D-2">Д-2(2,25х0,85)</option>
+                    <option value="D-3">Д-3(2,25х0,95)</option>
+                    <option value="D-4">Д-4(2,25х0,95)</option>
+                </select>
+            </div>
+            <div class="subtracted__input">
+                <input type="number" class="block" value="1" min="0" max="100" step="1">
+            </div>
+            <div class="subtracted__opening">
+                <select id="subtracted__select" class="subtracted__select">
+                    <option value="OP-201">OП-201(1,78x1,86)</option>
+                    <option value="OP-214">OП-214(1,78x1,26)</option>
+                    <option value="DSV-2">ДСВ-2(2,25x1,1)</option>
+                    <option value="DSV-3">ДСВ-3(2,15x1,15)</option>
+                    <option value="DSV-4">ДСВ-4(2,15х0,8)</option>
+                    <option value="DSV-4">ДСВ-6(2,25х1)</option>
+                    <option value="BP-201">БП-201(2,45х1,7)</option>
+                    <option value="BP-202">БП-202(2,45х1,4)</option>
+                    <option value="D-2">Д-2(2,25х0,85)</option>
+                    <option value="D-3">Д-3(2,25х0,95)</option>
+                    <option value="D-4">Д-4(2,25х0,95)</option>
+                </select>
+            </div>
+            <div class="subtracted__input">
+                <input type="number" class="block" value="1" min="0" max="100" step="1">
+            </div>
+            <button>Вычесть еще</button>
+            <div class="result">Итоговая площадь составила <span>2034</span>м2</div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
